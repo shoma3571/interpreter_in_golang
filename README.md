@@ -12,9 +12,15 @@ docker-compose up -d
 # コンテナのシェルに入って実行
 docker-compose exec app /bin/bash
 
+# コンテナのシェルから抜ける
+Ctrl + P + Q
+
 # HelloWorld.goを動かす
 cd samples
 go run HelloWorld.go
+
+# コンテナの停止
+docker-compose down
 
 ```
 
